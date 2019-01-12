@@ -1,0 +1,21 @@
+{
+  "name": "tvintegrationstation",
+  "version": "1.0.0",
+  "description": "A TrackVia Integration generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel --presets es2015 -d lib/ src",
+    "zip": "zip command"
+  },
+  "bin": {
+    "generate": "./index.js"
+  },
+  "author": "Paul Richard",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "inquirer": "^6.2.1",
+    "ora": "^3.0.0"
+  }
+}
