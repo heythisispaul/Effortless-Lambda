@@ -7,9 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel --presets es2015 -d lib/ src"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heythisispaul/Effortless-Lambda"
+  },
   "bin": {
     "generate": "./index.js"
   },
+  "keywords": [
+    "generator",
+    "lambda",
+    "TrackVia",
+    "ES6"
+  ],
   "author": "Paul Richard",
   "license": "ISC",
   "dependencies": {
