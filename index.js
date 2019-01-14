@@ -11,7 +11,7 @@ const QUESTIONS = [
     {
         name: 'projectName',
         type: 'input',
-        message: 'Integration Name:',
+        message: 'Project Name:',
         validate: (input) => /^([A-Za-z\-\_\d])+$/.test(input) ? true : 'Name can only include letters, numbers, hashes, and underscores.'
     },
     {
