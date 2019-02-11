@@ -1,0 +1,49 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "a Lambda function generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack",
+    "start": "npm run build && cd utils && node runIndex.js",
+    "lint:configure": "eslint --init",
+    "zip": "webpack && cd utils && node createZip.js"
+  },
+  "bin": {
+    "generate": "./index.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "author": "Paul",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-typescript": "^7.1.0",
+    "@types/jest": "^24.0.0",
+    "@typescript-eslint/eslint-plugin": "^1.3.0",
+    "archiver": "^3.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^7.1.5",
+    "eslint": "^5.12.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^24.0.0",
+    "regenerator-runtime": "^0.13.1",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.3.3",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  },
+  "dependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "source-map-loader": "^0.2.4"
+  }
+}
